@@ -1,5 +1,6 @@
 :root {
     --flexoki-950: #1C1B1A;
+    --flexoki-700: #6F6E69;
     --flexoki-paper: #FFFCF0;
     --flexoki-green-100: #DDE2B2;
     --flexoki-green-150: #CDD597;
@@ -10,10 +11,10 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.5;
-    padding: 1em;
-    max-width: 768px;
+    padding: 1.1em;
+    max-width: 70ch;
     background-color: var(--flexoki-950);
     color: var(--flexoki-paper);
     overflow-x: hidden;
@@ -34,8 +35,14 @@ hr {
 }
 
 hr:after {
-    content: "***";
+    content: "************";
     display: inline-block;
     position: relative;
     font-size: 1.5em;
+}
+
+footer {
+    color: var(--flexoki-700);
+    font-size: 0.7em;
+    max-width: 50ch;
 }
